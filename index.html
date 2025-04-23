@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Projetos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .project {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+    }
+    .project-content {
+      padding: 1rem;
+    }
+    .project-title {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem;
+    }
+    .project-desc {
+      font-size: 0.95rem;
+      margin: 0 0 1rem;
+      color: #555;
+    }
+    .project-links a {
+      text-decoration: none;
+      color: #1e40af;
+      display: inline-block;
+      margin-right: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Portfólio</h1>
+    <p>Projetos desenvolvidos com dedicação e criatividade</p>
+  </header>
+  <main class="portfolio">
+    <!-- Projeto 1 -->
+    <div class="project">
+      <img src="img/projeto1.png" alt="Screenshot do Projeto 1">
+      <div class="project-content">
+        <h2 class="project-title">Projeto 1</h2>
+        <p class="project-desc">Participei como desenvolvedor backend, construindo APIs REST com autenticação e banco de dados relacional.</p>
+        <div class="project-links">
+          <a href="https://github.com/seuusuario/projeto1" target="_blank">GitHub</a>
+          <a href="projetos/projeto1/readme.md" target="_blank">README</a>
+        </div>
+      </div>
+    </div>
+    <!-- Repita para os outros 5 projetos -->
+    <div class="project">
+      <img src="img/projeto2.png" alt="Screenshot do Projeto 2">
+      <div class="project-content">
+        <h2 class="project-title">Projeto 2</h2>
+        <p class="project-desc">Atuei como responsável pela UI/UX e desenvolvimento mobile com Kotlin e Compose Multiplatform.</p>
+        <div class="project-links">
+          <a href="https://github.com/seuusuario/projeto2" target="_blank">GitHub</a>
+          <a href="projetos/projeto2/readme.md" target="_blank">README</a>
+        </div>
+      </div>
+    </div>
+    <!-- Você pode duplicar os blocos acima para projetos 3 a 6 -->
+  </main>
+</body>
+</html>
